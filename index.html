@@ -123,47 +123,34 @@ footer {
         text-align: center; /* Center-align the text */
     }
 }
+ 
+           
 @media only screen and (min-width: 768px) {
-            body {
+   body {
                 background-color: red;
             }
-
-            .row {
-                margin: 50px;
-            }
   .row {
-        margin: 50px;
-    }
+      margin: 50px;
+  }
 
-    .col-2,
-    .col-9 {
-        padding: 20px;
-        font-size: 20px;
-    }
+  .attraction {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 20px;
+  }
 
-    header {
-        padding: 10px;
-    }
+  .attraction img {
+      width: 150px;
+      height: 150px;
+      order: 1;
+      margin-bottom: 10px;
+  }
 
-    .attraction {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end; /* Align images to the right */
-        margin-bottom: 20px;
-    }
-
-    .attraction img {
-        width: 150px;
-        height: 150px;
-        order: 1; /* Display image to the left of text */
-        margin-bottom: 10px;
-    }
-
-    .p {
-        text-align: right; /* Right-align the text */
-    }
+  .p {
+      text-align: right;
+  }
 }
-  </style>
+ </style>
 </head>
 <body>
   <header>
