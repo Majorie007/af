@@ -38,26 +38,25 @@ footer {
     }
     .row {
       display: flex;
-      flex-wrap: wrap; /* Allow wrapping on smaller screens */
-      justify-content: space-between;
       margin: 20px;
     }
-    .col-2 {
-      flex: 0 0 calc(30% - 20px); /* Adjust for margin */
-      background-color: lightgreen;
-      padding: 10px;
-      font-size: 18px;
-      color: black;
-      margin-bottom: 20px;
-    }
-    .col-9 {
-      flex: 0 0 calc(65% - 20px); /* Adjust for margin */
-      background-color: olive;
-      padding: 10px;
-      font-size: 18px;
-      color: black;
-      margin-bottom: 20px;
-    }
+ .col-2 {
+  flex: 0 0 100%; /* Pas deze regel aan */
+  background-color: lightgreen;
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.col-9 {
+  flex: 0 0 100%; /* Pas deze regel aan */
+  background-color: olive;
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+}
     .attraction {
       display: flex;
       margin-bottom: 20px;
