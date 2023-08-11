@@ -85,6 +85,44 @@ footer {
   width: 75%;
   margin: 20px auto; /* Plaats de footer in het midden en pas de bovenste marge aan */
 }
+    @media only screen and (max-width: 768px) {
+    .col-2,
+    .col-9 {
+        margin: 10px;
+        padding: 10px; /* Increase padding for better spacing */
+    }
+
+    .row {
+        flex-direction: column; /* Stacking for mobile */
+    }
+
+    .col-2,
+    .col-9 {
+        flex: 0 0 calc(100% - 20px); /* Adjust for margin */
+    }
+
+    .col-2 {
+        order: 2; /* Change the order of col-2 to display it below col-9 */
+    }
+
+    .col-9 {
+        order: 1; /* Change the order of col-9 to display it above col-2 */
+    }
+
+    .attraction {
+        flex-direction: column; /* Stack the text below the image */
+        align-items: center;
+    }
+
+    .attraction img {
+        margin: 10px auto; /* Center the image */
+        order: 2; /* Change the order to display image on the right */
+    }
+
+    .p {
+        text-align: center; /* Center-align the text */
+    }
+}
 @media only screen and (min-width: 768px) {
             body {
                 background-color: red;
