@@ -11,57 +11,53 @@
     body {
       font-family: 'Montserrat', sans-serif;
       background-color: navy;
-      margin: 0; /* Reset margin to remove extra spacing */
+      margin: 0;
       padding: 0;
     }
     header {
-  text-align: center;
-  background-image: url('images/ZWOLLE.jpg');
-  background-size: contain; /* Verander 'cover' naar 'contain' */
-  background-repeat: no-repeat;
-  background-position: center;
-  color: black;
-  padding: 20px;
-  font-size: 24px;
-  margin-bottom: 10px;
-  }
-.col-2,
-.col-9,
-footer {
-  border-radius: 15px;
-}
+      text-align: center;
+      background-image: url('images/ZWOLLE.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
     .container {
-      display: flex; /* Use flex to center content */
-      flex-direction: column; /* Stack columns in a vertical layout */
-      align-items: center; /* Center horizontally */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-top: 20px;
     }
     .row {
       display: flex;
-      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      flex-wrap: wrap;
       justify-content: space-between;
       margin: 20px;
     }
-    .col-2 {
-      flex: 0 0 calc(30% - 20px); /* Adjust for margin */
-      background-color: lightgreen;
+    .col-2,
+    .col-9,
+    footer {
+      border-radius: 15px;
+      margin: 10px;
       padding: 10px;
       font-size: 18px;
       color: black;
-      margin-bottom: 20px;
+    }
+    .col-2 {
+      flex: 0 0 calc(40% - 20px);
+      background-color: lightgreen;
     }
     .col-9 {
-      flex: 0 0 calc(65% - 20px); /* Adjust for margin */
+      flex: 0 0 calc(60% - 20px);
       background-color: olive;
-      padding: 10px;
-      font-size: 18px;
-      color: black;
-      margin-bottom: 20px;
     }
     .attraction {
       display: flex;
       margin-bottom: 20px;
-      align-items: center; /* Center vertically */
+      align-items: center;
     }
     .attraction img {
       margin-left: 0;
@@ -70,100 +66,52 @@ footer {
       height: 150px;
       order: 2;
     }
-    .p{
-        margin-right: 25px;
-    }
-    
-    footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border-radius: 15px;
-  margin-top: 20px;
-  margin-bottom: 10px; /* Pas deze marge aan voor de gewenste ruimte onder de footer */
-  width: 75%;
-  margin: 20px auto; /* Plaats de footer in het midden en pas de bovenste marge aan */
-}
-    @media only screen and (max-width: 768px) {
-    .col-2,
-    .col-9 {
-        margin: 10px;
-        padding: 10px; /* Increase padding for better spacing */
-    }
-
-.row {
-        flex-direction: column; /* Stacking for mobile */
-    }
-
-    .col-2 {
-        flex-basis: calc(40% - 20px); /* Aanpassen naar een smaller percentage */
-        margin: 10px;
-        padding: 10px;
-        font-size: 18px;
-    }
-
-    .col-9 {
-        flex-basis: calc(60% - 20px); /* Aanpassen naar een breder percentage */
-        margin: 10px;
-        padding: 10px;
-        font-size: 18px;
-    }
-
-    .attraction {
-        flex-direction: column; /* Stack the text below the image */
-        align-items: center;
-    }
-
-    .attraction img {
-        margin: 10px auto; /* Center the image */
-        order: 2; /* Change the order to display image on the right */
-    }
-
     .p {
-        text-align: center; /* Center-align the text */
+      margin-right: 25px;
+      text-align: center;
     }
-}
-@media only screen and (min-width: 768px) {
-            body {
-                background-color: red;
-            }
-
-            .row {
-                margin: 50px;
-            }
-  .row {
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 15px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      width: 75%;
+      margin: 20px auto;
+    }
+    @media only screen and (min-width: 768px) {
+      body {
+        background-color: red;
+      }
+      .row {
         margin: 50px;
-    }
-
-    .col-2,
-    .col-9 {
+      }
+      .col-2,
+      .col-9 {
         padding: 20px;
         font-size: 20px;
-    }
-
-    header {
+      }
+      header {
         padding: 10px;
-    }
-
-    .attraction {
+      }
+      .attraction {
         display: flex;
         flex-direction: column;
-        align-items: flex-end; /* Align images to the right */
+        align-items: flex-end;
         margin-bottom: 20px;
-    }
-
-    .attraction img {
+      }
+      .attraction img {
         width: 150px;
         height: 150px;
-        order: 1; /* Display image to the left of text */
+        order: 1;
         margin-bottom: 10px;
+      }
+      .p {
+        text-align: right;
+      }
     }
-
-    .p {
-        text-align: right; /* Right-align the text */
-    }
-}
   </style>
 </head>
 <body>
