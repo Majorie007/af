@@ -89,30 +89,24 @@ footer {
       body {
         background-color: blue;
     }
-  .row{
-flex-direction: colomn;
-  }
-    .col-2,
+ .col-2,
     .col-9 {
-        margin: 10px; /* Voeg padding toe voor een betere tussenruimte */
-        padding: 20px;
-    }
-.col-2 {
-        flex-basis: calc(30% - 15px); /* Aanpassen naar een smaller percentage */
         margin: 10px;
-        padding: 10px;
-        font-size: 18px;
+        padding: 10px; /* Increase padding for better spacing */
     }
 
+    .row {
+        flex-direction: column; /* Stacking for mobile */
+    }
+
+    .col-2{
+flex:0 0 calc (80% - 20px);
+}
     .col-9 {
-        flex-basis: calc(60% - 20px); /* Aanpassen naar een breder percentage */
-        margin: 10px;
-        padding: 10px;
-        font-size: 18px;
+        flex: 0 0 calc(100% - 20px); /* Adjust for margin */
     }
 
-
-   .attraction {
+    .attraction {
         flex-direction: column; /* Stack the text below the image */
         align-items: center;
     }
@@ -126,7 +120,6 @@ flex-direction: colomn;
         text-align: center; /* Center-align the text */
     }
 }
-
 @media only screen and (min-width: 768px) {
    body {
         background-color: red;
