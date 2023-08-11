@@ -41,24 +41,22 @@ footer {
       margin: 20px;
     }
  .col-2 {
-    flex: 0 0 calc(30% - 20px); /* Verklein de breedte naar 30% */
+    flex: 0 0 calc(30% - 20px); 
     background-color: lightgreen;
     padding: 10px;
     font-size: 18px;
     color: black;
     margin-bottom: 20px;
-    margin-right: 10px; /* Voeg rechtermarge toe */
+    margin-right: 10px;
 }
-
-
 .col-9 {
     background-color: olive;
     padding: 10px;
     font-size: 18px;
     color: black;
     margin-bottom: 20px;
-    margin-left: 10px; /* Voeg linkermarge toe */
-    margin-right: 10px; /* Voeg rechtermarge toe */
+    margin-left: 10px; 
+    margin-right: 10px; 
 }
     .attraction {
       display: flex;
@@ -91,36 +89,16 @@ footer {
       body {
         background-color: blue;
     }
+  .row{
+flex-direction: colomn;
+  }
     .col-2,
     .col-9 {
         margin: 10px; /* Voeg padding toe voor een betere tussenruimte */
         padding: 20px;
     }
 
-    .row {
-        flex-direction: column; /* Stacking voor mobiel */
-    }
-
-   .col-2 {
-    flex: 0 0 calc(30% - 20px); /* Verklein de breedte naar 30% */
-    background-color: lightgreen;
-    padding: 10px;
-    font-size: 18px;
-    color: black;
-    margin-bottom: 20px;
-    margin-right: 10px; /* Voeg rechtermarge toe */
-}
-
-
-.col-9 {
-    background-color: olive;
-    padding: 10px;
-    font-size: 18px;
-    color: black;
-    margin-bottom: 20px;
-    margin-left: 10px; /* Voeg linkermarge toe */
-    margin-right: 10px; /* Voeg rechtermarge toe */
-    .attraction {
+   .attraction {
         flex-direction: column; /* Stack the text below the image */
         align-items: center;
     }
@@ -138,38 +116,9 @@ footer {
 @media only screen and (min-width: 768px) {
    body {
         background-color: red;
-            .row {
+  .row {
                 margin: 50px;
             }
-    
-    .col-2 {
-    flex: 0 0 calc(30% - 20px); /* Verklein de breedte naar 30% */
-    background-color: lightgreen;
-    padding: 10px;
-    font-size: 18px;
-    color: black;
-    margin-bottom: 20px;
-    margin-right: 10px; /* Voeg rechtermarge toe */
-}
-
-
-.col-9 {
-    background-color: olive;
-    padding: 10px;
-    font-size: 18px;
-    color: black;
-    margin-bottom: 20px;
-    margin-left: 10px; /* Voeg linkermarge toe */
-    margin-right: 10px; /* Voeg rechtermarge toe */
-           
-  }
-   body {
-                background-color: red;
-            }
-  .row {
-      margin: 50px;
-  }
-
   .attraction {
       display: flex;
       align-items: flex-end;
