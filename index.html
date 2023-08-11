@@ -84,31 +84,30 @@ footer {
   width: 75%;
   margin: 20px auto; /* Plaats de footer in het midden en pas de bovenste marge aan */
 }
-    @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .col-2,
     .col-9 {
-        margin: 10px;
-        padding: 10px; /* Increase padding for better spacing */
+        margin: 10px; /* Voeg padding toe voor een betere tussenruimte */
+        padding: 10px;
     }
 
-.row {
-        flex-direction: column; /* Stacking for mobile */
+    .row {
+        flex-direction: column; /* Stacking voor mobiel */
     }
 
     .col-2 {
-        flex-basis: calc(40% - 20px); /* Aanpassen naar een smaller percentage */
-        margin: 10px;
+        flex-basis: calc(40% - 20px); /* Pas aan naar een smaller percentage */
+        margin-right: 10px; /* Voeg rechtermarge toe */
         padding: 10px;
         font-size: 18px;
     }
 
     .col-9 {
-        flex-basis: calc(60% - 20px); /* Aanpassen naar een breder percentage */
-        margin: 10px;
+        flex-basis: calc(60% - 20px); /* Pas aan naar een breder percentage */
+        margin-left: 10px; /* Voeg linkermarge toe */
         padding: 10px;
         font-size: 18px;
     }
-
     .attraction {
         flex-direction: column; /* Stack the text below the image */
         align-items: center;
@@ -123,9 +122,23 @@ footer {
         text-align: center; /* Center-align the text */
     }
 }
- 
+
+    @media only screen and (min-width: 768px) {
+    /* ... (andere stijlen hierboven) ... */
+
+    .col-2 {
+        flex: 0 0 calc(40% - 20px); /* Pas de breedte en marges aan */
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .col-9 {
+        flex: 0 0 calc(60% - 20px); /* Pas de breedte en marges aan */
+        padding: 20px;
+        font-size: 20px;
+    }
            
-@media only screen and (min-width: 768px) {
+  }
    body {
                 background-color: red;
             }
