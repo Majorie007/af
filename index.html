@@ -101,18 +101,25 @@ footer {
         flex-direction: column; /* Stacking voor mobiel */
     }
 
-    .col-2 {
-        margin-right: 10px; /* Voeg rechtermarge toe */
-        padding: 10px;
-        font-size: 18px;
-    }
+   .col-2 {
+    flex: 0 0 calc(30% - 20px); /* Verklein de breedte naar 30% */
+    background-color: lightgreen;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+    margin-right: 10px; /* Voeg rechtermarge toe */
+}
 
-    .col-9 {
-        margin-left: 10px; /* Voeg linkermarge toe */
-        padding: 10px;
-        font-size: 18px;
-       margin-bottom: 20px;
-    }
+
+.col-9 {
+    background-color: olive;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 10px; /* Voeg linkermarge toe */
+    margin-right: 10px; /* Voeg rechtermarge toe */
     .attraction {
         flex-direction: column; /* Stack the text below the image */
         align-items: center;
